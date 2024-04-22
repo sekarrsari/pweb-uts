@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi dan Artikel Seputar Kesehatan - Halodoc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans bg-white">
+
+    <!-- Navbar start -->
+    <nav id="navbar" class="bg-white fixed w-full z-20 top-0 left-0 transition duration-300 ease-in-out">
+        <div
+            class="max-w-screen-full flex items-center justify-between border-b border-gray-200 mx-auto py-2.5 px-4 sm:px-8 md:px-8 lg:px-8">
+            <!-- Logo & navigation start -->
+            <div class="flex items-center space-x-3">
+                <a href="https://www.halodoc.com/" class="flex items-center space-x-3 ml-2">
+                    <img src="img/halodoc-logo.png" class="h-8" alt="Halodoc Logo">
+                </a>
+                <ul class="hidden md:flex md:flex-row md:space-x-4">
+                    <li>
+                        <a href="#" class="text-gray-900 font-normal hover:text-blue-700 ml-6">Beranda</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-rose-600 font-normal hover:text-blue-700 ml-6">Artikel</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-900 font-normal hover:text-blue-700 ml-6">Aplikasi</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-900 font-normal hover:text-blue-700 ml-6">Riwayat</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Logo & navigation end -->
+            <!-- Button Login start -->
+            <div class="flex items-center space-x-3">
+                <div class="md:hidden">
+                    <button type="button" class="hover:text-gray-700 focus:outline-none">
+                        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <button type="button"
+                    class="text-white bg-rose-600 hover:bg-rose-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm md:w-14 px-3 py-2">Login</button>
+            </div>
+            <!-- Button Login end -->
+        </div>
+        <!-- Location page start -->
+        <div class="flex items-center mt-1 ml-12">
+            <p class="mr-4 text-xs font-medium text-rose-600 hover:underline hover:cursor-pointer">Home</p>
+            <span class="mr-4">></span>
+            <p class="mr-4 text-xs font-normal text-black">Artikel</p>
+        </div>
+        <!-- Location page end -->
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- <br><br><br> -->
+
+
+    <div class="container mx-auto mt-32 px-4 max-w-[1215px]">
+        <!-- Search Bar start -->
+        <div class="h-12 flex justify-start max-w-full mx-auto mt-12">
+            <input type="text"
+                class="bg-white border border-gray-300 hover:border-gray-400 focus:border-blue-500 text-gray-900 text-lg font-normal rounded-md block w-full p-2.5"
+                placeholder="Cari artikel berdasarkan judul, kategori, topik" required />
+            <button type="submit"
+                class="w-28 p-2.5 flex items-center text-sm font-medium text-white bg-rose-600 rounded-md border border-none hover:bg-rose-800 focus:outline-none ml-2">
+                <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                </svg>
+                <div class="text-lg ml-4">Cari</div>
+            </button>
+        </div>
+        <!-- Search Bar end -->
+
+
+        <!-- Topik Terkini start -->
+        <div class="mt-14">
+            <div class="flex items-center justify-between">
+                <p class="text-2xl font-medium text-gray-800">Topik Terkini</p>
+                <p class="text-sm font-semibold text-rose-600">Lihat Semua</p>
+            </div>
+            <div class="mt-8 flex items-center justify-start">
+                <button type="button"
+                    class="py-2 px-2 me-4 mb-2 text-sm font-normal text-gray-800 bg-white rounded-md border border-gray-300 hover:cursor-pointer">Kecantikan</button>
+                <button type="button"
+                    class="py-2 px-2 me-4 mb-2 text-sm font-normal text-gray-800 bg-white rounded-md border border-gray-300 hover:cursor-pointer">Jerawat</button>
+                <button type="button"
+                    class="py-2 px-2 me-4 mb-2 text-sm font-normal text-gray-800 bg-white rounded-md border border-gray-300 hover:cursor-pointer">Kehamilan</button>
+            </div>
+        </div>
+        <!-- Topik Terkini end -->
+
+
+        <!-- Artikel Terpopuler start -->
+        <div class="mt-9">
+            <p class="text-2xl font-medium text-gray-800">Artikel Terpopuler</p>
+            <div class="mt-9 grid gap-2 gap-x-4 grid-cols-3 grid-rows-4">
+                <!-- Artikel Utama -->
+                <div class="col-span-2 row-span-4 bg-gray-300 rounded-lg flex justify-center items-end relative">
+                    <div class="relative">
+                        <a href="#">
+                            <img class="object-cover w-full pt-6" src="img/artikel-terpopuler/utama.jpg"
+                                alt="image description">
+                        </a>
+                        <div class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-80"></div>
+                        <div class="-mx-2 absolute text-lg text-white bottom-6">
+                            <p class="text-3xl hover:cursor-pointer">CATAT, INI DAFTAR PSIKOLOGI DAN PSIKIATER TERDEKAT
+                                DI JAKARTA</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artikel 1 -->
+                <div class="mt-2 hover:cursor-pointer flex items-center justify-between">
+                    <div class="flex items-center">
+                        <img class="object-scale-down w-28 rounded-md" src="img/artikel-terpopuler/artikel1.jpg"
+                            alt="deskripsi">
+                        <div class="ml-2">
+                            <p class="mb-2 text-sm font-semibold tracking-normal text-gray-800">Catat, Ini
+                                Daftar Psikolog dan Psikiater Terdekat di Jakarta</p>
+                            <div class="flex items-center">
+                                <p
+                                    class="px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                                    Kesehatan Mental</p>
+                                <p class="ml-2 text-xs font-normal text-gray-600">5 Menit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artikel 2 -->
+                <div class="-mt-4 hover:cursor-pointer flex items-center justify-between">
+                    <div class="flex items-center">
+                        <img class="object-scale-down w-28 rounded-md" src="img/artikel-terpopuler/artikel2.jpg"
+                            alt="deskripsi">
+                        <div class="ml-2">
+                            <p class="mb-2 text-sm font-semibold tracking-normal text-gray-800">Adakah Manfaat
+                                Menyanyikan Lagu Nina Bobo untuk Bayi?</p>
+                            <div class="flex items-center">
+                                <p
+                                    class="px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                                    Kesehatan Bayi</p>
+                                <p class="ml-2 text-xs font-normal text-gray-600">3 Menit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artikel 3 -->
+                <div class="-mt-8 hover:cursor-pointer flex items-center justify-between">
+                    <div class="flex items-center">
+                        <img class="object-scale-down w-28 rounded-md" src="img/artikel-terpopuler/artikel3.jpg"
+                            alt="deskripsi">
+                        <div class="ml-2">
+                            <p class="mb-2 text-sm font-semibold tracking-normal text-gray-800">6 Bahaya Cium Bayi
+                                Sembarangan yang Jarang Diketahui</p>
+                            <div class="flex items-center">
+                                <p
+                                    class="px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                                    Pertumbuhan Balita</p>
+                                <p class="ml-2 text-xs font-normal text-gray-600">4 Menit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artikel 4 -->
+                <div class="-mt-12 hover:cursor-pointer flex items-center justify-between">
+                    <div class="flex items-center">
+                        <img class="object-scale-down w-28 rounded-md" src="img/artikel-terpopuler/artikel4.jpg"
+                            alt="deskripsi">
+                        <div class="ml-2">
+                            <p class="mb-2 text-sm font-semibold tracking-normal text-gray-800">Rekomendasi Dokter yang
+                                Bisa Bantu Cek Kondisi Paru-Paru</p>
+                            <div class="flex items-center">
+                                <p
+                                    class="px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                                    Paru-Paru</p>
+                                <p class="ml-2 text-xs font-normal text-gray-600">4 Menit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Artikel Terpopuler end -->
+
+
+        <!-- Artikel Terbaru (1) Start -->
+        <div class="my-9">
+            <span class="text-2xl font-medium text-gray-800">Artikel Terbaru</span>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Artikel 1 -->
+            <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(1)-1.jpg" alt="">
+                <div class="p-2">
+                    <a href="#">
+                        <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                            Jenis Obat Tidur yang Aman untuk Menangani Insomnia</p>
+                    </a>
+                    <p
+                        class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                        Insomnia
+                    </p>
+                    <p class="my-1 text-xs font-normal text-gray-600">Beberapa obat tidur harus digunakan dengan resep
+                        dokter. Tapi, ada juga obat...</p>
+                </div>
+            </div>
+            <!-- Artikel 2 -->
+            <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(1)-2.jpg" alt="">
+                <div class="p-2">
+                    <a href="#">
+                        <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">5 Jenis Obat Gatal
+                            Selangkangan yang Ampuh dan Aman</p>
+                    </a>
+                    <p
+                        class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                        Infeksi Kulit
+                    </p>
+                    <p
+                        class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                        Dermatitis Kontak
+                    </p>
+                    <p class="my-1 text-xs font-normal text-justify text-gray-600">Gatal pada kemaluan bisa disebabkan
+                        karena banyak hal, seringnya infeksi akibat...</p>
+                </div>
+            </div>
+            <!-- Artikel 3 -->
+            <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(1)-3.jpg" alt="">
+                <div class="p-2">
+                    <a href="#">
+                        <p id="text" class="mb-2 text-sm font-medium text-justify tracking-tight text-gray-800">
+                            Begini Cara Menghitung Defisit Kalori, Diet Pasti Berhasil!</p>
+                    </a>
+                    <p
+                        class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                        Diet dan Nutrisi
+                    </p>
+                    <p class="my-1 text-xs font-normal text-justify text-gray-600">Agar diet berhasil, kamu perlu tahu
+                        cara menghitung defisit kalori. Lalu..</p>
+                </div>
+            </div>
+            <!-- Artikel 4 -->
+            <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(1)-4.jpg" alt="">
+                <div class="p-2">
+                    <a href="#">
+                        <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">Ini Psikologi yang
+                            Bisa Bantu Perawatan PTSD</p>
+                    </a>
+                    <p
+                        class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                        PTSD
+                    </p>
+                    <p class="my-1 text-xs font-normal text-justify text-gray-600">PTSD merupakan masalah kesehatan
+                        mental yang dipicu oleh pengalaman traumatis di...</p>
+                </div>
+            </div>
+            <!-- Artikel 5 -->
+            <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(1)-5.jpg" alt="">
+                <div class="p-2">
+                    <a href="#">
+                        <p id="text" class="mb-2 text-sm font-medium tracking-wider text-gray-800">Ini Manfaat Konsumsi
+                            Obat yang Diresepkan Psikiater</p>
+                    </a>
+                    <p
+                        class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                        Kesehatan Mental
+                    </p>
+                    <p class="my-1 text-xs font-normal text-justify text-gray-600">Ada banyak manfaat yang bisa kamu
+                        rasakan saat disiplin mengonsumsi obat...</p>
+                </div>
+            </div>
+            <!-- Artikel 6 -->
+            <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(1)-6.jpg" alt="">
+                <div class="p-2">
+                    <a href="#">
+                        <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                            Ini Berbagai Obat yang Kerap Diresepkan Psikiater</p>
+                    </a>
+                    <p
+                        class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                        Kesehatan Mental
+                    </p>
+                    <p class="my-1 text-xs font-normal text-gray-600">Ada beberapa obat-obatan yang kerap diresepkan
+                        psikiater untuk mengatasi...</p>
+                </div>
+            </div>
+            <!-- Artikel 7 -->
+            <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(1)-7.jpg" alt="">
+                <div class="p-2">
+                    <a href="#">
+                        <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                            Ini Doker yang Bisa Bantu Obati Plantas Fasciitis</p>
+                    </a>
+                    <p
+                        class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                        Plantas Fasciitis
+                    </p>
+                    <p
+                        class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                        Cedera Hamstring
+                    </p>
+                    <p class="my-1 text-xs font-normal text-gray-600">Plantas fasciitis merupakan kondisi medis yang
+                        menyebabkan nyeri bagian tumit...</p>
+                </div>
+            </div>
+            <!-- Artikel 8 -->
+            <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(1)-8.jpg" alt="">
+                <div class="p-2">
+                    <a href="#">
+                        <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                            Ketahui Cara Mengobati Sakit Gigi Berlubang</p>
+                    </a>
+                    <p
+                        class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                        Gigi Berlubang
+                    </p>
+                    <p class="my-1 text-xs font-normal text-gray-600">Gigi berlubang bisa menimbulkan berbagai gejala
+                        tidak nyaman, seperti gigi ngilu...</p>
+                </div>
+            </div>
+        </div>
+        <!-- Artikel Terbaru (1) End -->
+
+
+        <!-- Artikel Terbaru (2) Start -->
+        <div id="artikel" class="transition duration-300 ease-in hidden">
+            <div class="mt-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Artikel 1 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(2)-1.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Berbagai Penyebab Herpes yang Perlu Diketahui</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Herpes
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Herpes merupakan infeksi virus menular yang
+                            tidak bisa kamu sepelekan. Sebab,...</p>
+                    </div>
+                </div>
+                <!-- Artikel 2 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(2)-2.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Ini Obat Tidur Tanpa Resep yang Aman untuk Dikonsumsi</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Insomnia
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Untuk mengatasi insomnia, kamu bisa
+                            menggunakan obat tidur tanpa resep dokt...</p>
+                    </div>
+                </div>
+                <!-- Artikel 3 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(2)-3.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Waspada, Ini Bahaya Self Diagnosis Kondisi Kesehatan Mental</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Kesehatan Mental
+                        </p>
+                        <p class="my-1 text-xs font-normal text-justify text-gray-600">Self diagnosis adalah perilaku
+                            saat seseorang mencoba menentukan kondisi..</p>
+                    </div>
+                </div>
+                <!-- Artikel 4 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(2)-4.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                5 Penanganan Pertama Gusi Bengkak Bernanah</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Mulut dan Gusi
+                        </p>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Gusi Bengkak
+                        </p>
+                        <p class="my-1 text-xs font-normal text-justify text-gray-600">Gusi bengkak bernanah bisa
+                            membuat tidak nyaman dan berpotensi menyebabkan...</p>
+                    </div>
+                </div>
+                <!-- Artikel 5 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(2)-5.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Ini Pilihan Doter yang Paham Pengobatan Leukemia</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Leukemia
+                        </p>
+                        <p class="my-1 text-xs font-normal text-justify text-gray-600">Leukemia adalah kondisi saat sel
+                            darah putih diproduksi secara tidak normal di sumsum...</p>
+                    </div>
+                </div>
+                <!-- Artikel 6 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(2)-6.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                4 Makanan yang Pelu Dihindari saat Gusi Bengkak</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Gusi Bengkak
+                        </p>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Abses Gigi
+                        </p>
+                        <p class="my-1 text-xs font-normal text-justify text-gray-600">Saat mengalami gusi bengkak, kamu
+                            perlu berhati-hati dalam mengonsumsi makanan...</p>
+                    </div>
+                </div>
+                <!-- Artikel 7 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(2)-7.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Catat, Ini Ciri-Ciri Orang Harus ke Psikiater</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Kesehatan Mental
+                        </p>
+                        <p class="my-1 text-xs font-normal text-justify text-gray-600">Sulit mengendalikan emosi, rasa
+                            cemas berlebih, dan menarik diri dari lingkungan...</p>
+                    </div>
+                </div>
+                <!-- Artikel 8 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(2)-8.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Ini Hal yang Dilakukan saat Sesi Konseling dengan Psikolog</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Kesehatan Mental
+                        </p>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Konseling
+                        </p>
+                        <p class="my-1 text-xs font-normal text-justify text-gray-600">Sesi konseling dapat membantu
+                            kamu mengatasi masalah yang sedang dialami....</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Artikel Terbaru (2) End -->
+
+
+        <!-- Artikel Terbaru (3) Start -->
+        <div id="artikel" class="transition duration-300 ease-in hidden">
+            <div class="mt-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Artikel 1 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(3)-1.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Ini Pilihan Obat Gusi Bengkak yang Paling Ampuh dan Aman</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Gusi Bengkak
+                        </p>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Mulut dan Gigi
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Ada berbagai pilihan obat gusi bengkak yang
+                            ampuh dan meredakan sensasi...</p>
+                    </div>
+                </div>
+                <!-- Artikel 2 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(3)-2.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Ini 7 Rekomendasi Obat Ambeien yang Ampuh dan Mudah Ditemukan</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Ambeien (Wasir)
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Ambeien dapat memicu rasa sakit pada bagian
+                            dubur sehingga menimbulkan rasa...</p>
+                    </div>
+                </div>
+                <!-- Artikel 3 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(3)-3.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Ini Jam Makan yang Tepat saat Diet Intermittent Fasting</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Diet dan Nutrisi
+                        </p>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Diet Intermittent Fasting
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Intermittent fasting adalah diet dengan metode
+                            jam makan. Artinya, kamu...</p>
+                    </div>
+                </div>
+                <!-- Artikel 4 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(3)-4.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Ini Dokter yang Bisa Beri Info Lengkap Prosedur Bayi Tabung</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Hamil Anggur
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Hamil anggur bisa menyebabkan
+                            komplikasi serius jika tidak segera ditangani. Kamu bis...</p>
+                    </div>
+                </div>
+                <!-- Artikel 5 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(3)-5.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Mengidap Kifosis? Ini Dokter yang Paham Perawatannya</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Kifosis
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Kifosis bisa membuat postur tubuh
+                            membungkuk bahkan seperti memiliki pun...</p>
+                    </div>
+                </div>
+                <!-- Artikel 6 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(3)-6.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Padat Nutrisi, Ini Contoh Menu Diet Seminggu Turun 10 Kg</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Diet dan Nutrisi
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Cara terbaik yang bisa dilakukan
+                            untuk menurunkan berat badan, yaitu dengat die...</p>
+                    </div>
+                </div>
+                <!-- Artikel 7 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(3)-7.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                5 Cara Efektif Mengatasi Gusi Bengkak Secara Alami</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Gusi Bengkak
+                        </p>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Mulut dan Gigi
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Gusi bengkak yang gejalanya masih
+                            ringan bisa diatasi dengan cara alami. Ini bisa...</p>
+                    </div>
+                </div>
+                <!-- Artikel 8 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(3)-8.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Ini 4 Jenis Alergi Kulit yang Bisa Terjadi</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Alergi
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Alergi adalah reaksi tubuh
+                            terhadap alergen yang dianggap berbahaya dan kondisi ini...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Artikel Terbaru (3) End -->
+
+
+        <!-- Artikel Terbaru (4) Start -->
+        <div id="artikel" class="transition duration-300 ease-in hidden">
+            <div class="mt-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Artikel 1 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(4)-1.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                5 Daftar Obat yang Mengandung Antihistamin untuk Pereda Alergi</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Alergi
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Ketika terpapar zat alergen, tubuh kita
+                            bereaksi dengan menghasilkan histamin...</p>
+                    </div>
+                </div>
+                <!-- Artikel 2 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(4)-2.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                6 Bahan Alami yang Ampuh Mengusir Nyamuk di Rumah</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Malaria
+                        </p>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Demam Berdarah
+                        </p>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Demam
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Nyamuk merupakan serangga yang sering menjadi
+                            pembawa penyakit berbahaya,...</p>
+                    </div>
+                </div>
+                <!-- Artikel 3 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(4)-3.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Ini Dokter yang Bisa Beri Saran Konsumsi Protein Harian</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Protein
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Protein merupakan nutrisi yang dibutuhkan oleh
+                            tubuh setiap hari. Namun, setiap oran...</p>
+                    </div>
+                </div>
+                <!-- Artikel 4 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(4)-4.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Batuk Disertai Sesak Napas, Begini Cara Mengatasinya</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Sesak Napas
+                        </p>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Batuk
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Batuk disertai sesak napas dapat menggangu
+                            aktivitas bila tidak segera...</p>
+                    </div>
+                </div>
+                <!-- Artikel 5 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(4)-5.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                7 Rekomendasi Salep yang Ampuh Hilangkan Gatal di Kulit</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Infeksi Kulit
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Ada berbagai obat atau salep yang
+                            dapat kamu gunakan untuk menghilangkan gatal...</p>
+                    </div>
+                </div>
+                <!-- Artikel 6 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(4)-6.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Batuk Tak Kunjung Sembuh, Begini Cara Mengatasinya</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Batuk
+                        </p>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Batu Kronis
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Ada berbagai cara untuk mengatasi batuk tak
+                            kunjung sembuh. Selain dengan obat,...</p>
+                    </div>
+                </div>
+                <!-- Artikel 7 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(4)-7.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                5 Daftar Obat Gatal Seluruh Badan yang Ada di Apotek</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Perawatan Kulit
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Gatal-gatal yang terjadi pada seluruh badan
+                            bisa terjadi karena beberapa faktor, sepert...</p>
+                    </div>
+                </div>
+                <!-- Artikel 8 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(4)-8.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Ini Rekomendasi 9 Obat Sakit Gigi yang Paling Ampuh</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Sakit Gigi
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Ada beberapa obat sakit gigi yang ampuh untuk
+                            meredakan rasa nyeri atau ngilu...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Artikel Terbaru (4) End -->
+
+
+        <!-- Artikel Terbaru (5) Start -->
+        <div id="artikel" class="transition duration-300 ease-in hidden">
+            <div class="mt-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Artikel 1 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(5)-1.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800"> Ini Obat Sifilis
+                                di Apotek yang Ampuh Redakan Gejala</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Penyakit Menular Seksual PMS
+                        </p>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Sifilis (Raja Singa)
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Salah satu cara yang paling efektif meredakan
+                            gejala sifilis adalah...</p>
+                    </div>
+                </div>
+                <!-- Artikel 2 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(5)-2.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Muncul Gejala Chikungunya? Segera Hubungi Dokter ini</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Chikungunya
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Gejala chikungunya umumnya ditandai dengan
+                            nyeri sendi dan kelelahan. Kamu...</p>
+                    </div>
+                </div>
+                <!-- Artikel 3 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(5)-3.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Apakah Gagal Ginjal Kronis Bisa Sembuh? Cek Faktanya</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Gagal Ginjal Kronis
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Gagal ginjal kronis merupakan kondisi
+                            kerusakan ginjal yang terjadi dalam waktu...</p>
+                    </div>
+                </div>
+                <!-- Artikel 4 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(5)-4.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Ini Dokter yang Paham Pengobatan Diabetes Insipidus</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Diabetes Insipidus
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Perawatan diabetes insipidus berfokus untuk
+                            meningkatkan kualitas hidup...</p>
+                    </div>
+                </div>
+                <!-- Artikel 5 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(5)-5.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                3 Hal yang Terjadi saat Alami Gagal Ginjal Stadium 5</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Gagal Ginjal
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Gagal ginjal stadium 5 merupakan tahapan
+                            terakhir dari penyakit ginjal kronis. Pada...</p>
+                    </div>
+                </div>
+                <!-- Artikel 6 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(5)-6.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Catat, Ini 7 Cara Meredakan Radang Tenggorokan Secara Alami</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Sakit Tenggorokan
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Radang tenggorokan dapat membuat pengidapnya
+                            sulit menelan makanan atau...</p>
+                    </div>
+                </div>
+                <!-- Artikel 7 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(5)-7.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Ini Dokter yang Bisa Beri Info Lengkap Prosedur Bayi Tabung</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Bayi Tabung
+                        </p>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Kehamilan
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Prosedur bayi tabung merupakan suatu program
+                            kehamilan yang melibatkan...</p>
+                    </div>
+                </div>
+                <!-- Artikel 8 -->
+                <div class="max-w-xs bg-white border rounded-md shadow hover:border-gray-400 hover:drop-shadow-lg hover:cursor-pointer"
+                    onmouseover="changeTextColor(this)" onmouseout="restoreTextColor(this)">
+                    <img class="h-auto max-w-full rounded-t-md" src="img/artikel-terbaru/artikel(5)-8.jpg" alt="">
+                    <div class="p-2">
+                        <a href="#">
+                            <p id="text" class="mb-2 text-sm font-medium tracking-tight text-gray-800">
+                                Ini 5 Pilihan Obat Kurap Minum yang Ampuh di Apotek</p>
+                        </a>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Kurap
+                        </p>
+                        <p
+                            class="inline-flex items-center px-2 py-1 text-xs font-normal text-center text-gray-800 bg-blue-50 rounded-md">
+                            Infeksi Kulit
+                        </p>
+                        <p class="my-1 text-xs font-normal text-gray-600">Penyakit kurap dapat menular dengan mudah
+                            apabila tidak segera diobati...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Artikel Terbaru (5) End -->
+
+
+        <!-- Button Selanjutnya start -->
+        <div id="btnWrapper" class="mt-5 text-center">
+            <button id="btnSelanjutnya" type="button"
+                class="py-2 px-11 me-2 mb-2 text-base font-semibold text-rose-600 rounded-md border border-rose-600 hover:bg-gray-100 hover:text-rose-800 hover:border-rose-800">Selanjutnya</button>
+        </div>
+        <!-- Button Selanjutnya end -->
+    </div>
+
+
+
+    <!-- Footer start -->
+    <div class="mt-20 bg-[#46568e] text-white">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-12">
+                <!-- Site Map -->
+                <div>
+                    <img src="img/footer/halodoc-footer-logo.jpg" alt="Halodoc Footer Logo" class="w-40 mb-7">
+                    <ul>
+                        <!-- Daftar Situs -->
+                        <li class="mb-4">
+                            <span class="text-lg font-bold">Site Map</span>
+                        </li>
+                        <li class="mb-2 flex">
+                            <a href="#" class="text-sm font-normal hover:cursor-pointer mr-40">FAQ</a>
+                            <a href="#" class="text-sm font-normal hover:cursor-pointer">Karir</a>
+                        </li>
+                        <li class="mb-2 flex">
+                            <a href="#" class="text-sm font-normal hover:cursor-pointer mr-40">Blog</a>
+                            <a href="#" class="text-sm font-normal hover:cursor-pointer -ml-1">Sequrity</a>
+                        </li>
+                        <li class="mb-2 flex">
+                            <a href="#" class="text-sm font-normal hover:cursor-pointer mr-16">Syarat &
+                                Ketentuan</a>
+                            <a href="#" class="text-sm font-normal hover:cursor-pointer">Media</a>
+                        </li>
+                        <li class="mb-2 flex">
+                            <a href="#" class="text-sm font-normal hover:cursor-pointer mr-20">Kebijakan
+                                Privasi</a>
+                            <a href="#" class="text-sm font-normal hover:cursor-pointer">Corporate
+                                Partnership</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="text-sm font-normal hover:cursor-pointer">Promo</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Layanan Pengaduan Konsumen -->
+                <div class="mt-14 w-[380px]">
+                    <span class="text-lg font-bold mb-4">Layanan Pengaduan Konsumen</span>
+                    <!-- Informasi Pengaduan Konsumen -->
+                    <div class="mt-4">
+                        <p class="text-base font-bold">PT Media Dokter Investama</p>
+                        <p class="-mt-1 text-sm font-normal">Jl. H.R. Rasuna Said Kav B32-33, Jakarta Selatan</p>
+                        <p class="-mt-1 text-sm font-normal hover:cursor-pointer">help@halodoc.com / 021-5095-9900
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-sm font-normal">Direktorat Jenderal Perlindungan Konsumen dan Tertib Niaga
+                        </p>
+                        <p class="-mt-1 text-sm font-normal">Kementerian Perdagangan Republik Indonesia</p>
+                        <p class="-mt-1 text-sm font-normal">0853 1111 1010 (WhatsApp)</p>
+                    </div>
+                </div>
+                <!-- Download App di -->
+                <div class="mt-14 ml-20">
+                    <span class="text-lg font-bold mb-4">Download App di</span>
+                    <div class="flex justify-center mt-4 mb-4 space-x-4">
+                        <img src="img/footer/google-play.png" alt="Google Play" class="w-24 hover:cursor-pointer">
+                        <img src="img/footer/app-store.png" alt="App Store" class="w-24 hover:cursor-pointer">
+                    </div>
+                    <span class="text-lg font-bold hover:cursor-pointer">Apakah kamu Dokter?</span>
+                    <button type="button"
+                        class="mt-4 w-full md:w-auto px-4 py-2 flex items-center justify-center text-sm font-medium text-white bg-rose-600 rounded-md border border-none hover:bg-rose-800 ">
+                        <img src="img/footer/hd-white-logo-icon.svg" alt="HD Logo" class="w-5 h-5 mr-1">
+                        <span>DAFTAR</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- BAWAH -->
+        <div class="px-4 py-5 bg-[#35406b]">
+            <div class="mx-auto max-w-6xl sm:flex sm:items-center sm:justify-between">
+                <span
+                    class="text-sm font-bold uppercase sm:text-base text-center block sm:inline-block mb-4 sm:mb-0">©halodoc,
+                    2024. All rights reserved</span>
+                <div class="flex justify-center space-x-4">
+                    <span class="text-sm font-bold hidden sm:inline-block">Follow kami di: </span>
+                    <a href="#" class="w-4 h-4">
+                        <img src="img/footer/twitter.png" alt="Twitter" class="w-full h-5">
+                    </a>
+                    <a href="#" class="w-4 h-4">
+                        <img src="img/footer/facebook.png" alt="Facebook" class="w-3">
+                    </a>
+                    <a href="#" class="w-4 h-4">
+                        <img src="img/footer/instagram.png" alt="Instagram" class="w-full h-5">
+                    </a>
+                    <a href="#" class="w-4 h-4">
+                        <img src="img/footer/youtube.png" alt="Youtube" class="w-full h-5">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer end -->
+
+
+
+    <!-- Javascript -->
+    <!-- Navbar -->
+    <script>
+        var lastScrollTop = 0;
+        var navbar = document.getElementById('navbar',);
+
+        window.addEventListener("scroll", function () {
+            var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll > lastScrollTop) {
+                // Discroll ke bawah
+                navbar.style.transform = 'translateY(-100%)';
+            } else {
+                // Discroll ke atas
+                navbar.style.transform = 'translateY(0)';
+            }
+
+            lastScrollTop = currentScroll;
+        });
+    </script>
+
+    <!-- Hover Artikel Terpopuler -->
+    <script>
+        function changeTextColor(element) {
+            var text = element.querySelector('#text');
+            text.classList.add('text-rose-600');
+        }
+
+        function restoreTextColor(element) {
+            var text = element.querySelector('#text');
+            text.classList.remove('text-rose-600');
+        }
+    </script>
+
+    <!-- Artikel & Button hidden -->
+    <script>
+        const btnSelanjutnya = document.getElementById('btnSelanjutnya')
+        document.getElementById('btnSelanjutnya').addEventListener('click', function () {
+            let hiddenArticle = document.querySelector('.hidden');
+            // Mengambil artikel terbaru yang masih tersembunyi
+            if (hiddenArticle) {
+                // Mengubah visibilitas artikel tersembunyi menjadi terlihat
+                hiddenArticle.classList.remove('hidden');
+                // Memindahkan tombol "Selanjutnya" ke bagian bawah
+                document.getElementById('btnWrapper').appendChild(this);
+            } else {
+                // Jika tidak ada artikel yang tersisa
+                btnSelanjutnya.classList.add('cursor-not-allowed')
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
